@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑动侧边栏</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2><i class='bx bx-folder'></i> 資料夾</h2>
+        <ul id="folder-list"></ul>
+        <button id="create-folder" class="button boxicon">📁 新增資料夾</button>
+        <button id="create-file" class="button boxicon">📄 新增文件</button>
+    </div>
+
+    <button class="toggle-btn">☰</button>
+    
+    <div class="container">
+        <h1><i class='bx bx-home'></i> 歡迎來到主頁，{{ current_user.username }}！</h1>
+        <button id="logoutButton"><i class='bx bx-log-out'></i> 登出</button>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
