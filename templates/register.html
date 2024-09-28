@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用戶註冊</title>
     <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h2>用戶註冊</h2>
+        <h2><i class='bx bx-user-plus'></i> 用戶註冊</h2>
         <form method="POST">
-            <input type="text" name="username" placeholder="用戶名" required>
-            <input type="password" name="password" placeholder="密碼" required>
-            <button type="submit">註冊</button>
+            <div class="input-group">
+                <i class='bx bx-user'></i>
+                <input type="text" name="username" placeholder="用戶名" required>
+            </div>
+            <div class="input-group">
+                <i class='bx bx-lock'></i>
+                <input type="password" name="password" placeholder="密碼" required>
+            </div>
+            <button type="submit"><i class='bx bx-user-check'></i> 註冊</button>
         </form>
         <p>已經有帳戶了？<a href="{{ url_for('login') }}">登入</a></p>
     </div>
